@@ -32,16 +32,11 @@ bool isReportSafe(vector<int>& vi) {
             return false;
         }
 
-        // if (isIncreasing) {
-        //     isIncreasing = diff > 0 ? true : false;
-        // } 
-        // if (isDecreasing) {
-        //     isDecreasing = diff < 0 ? true : false;     
-        // }
-        if (diff > 0) {
-            isDecreasing = false;
-        } else if (diff < 0) {
-            isIncreasing = false;
+        if (isIncreasing) {
+            isIncreasing = diff > 0 ? true : false;
+        } 
+        if (isDecreasing) {
+            isDecreasing = diff < 0 ? true : false;     
         }
     }
     
